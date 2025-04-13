@@ -1,104 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title> Horário de Aulas </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1> Horário de Aulas </h1>
-    <table>
-        <tr>
-            <th> Hora </th>
-            <th> Segunda </th>
-            <th> Terça </th>
-            <th> Quarta </th>
-            <th> Quinta </th>
-            <th> Sexta </th>
-        </tr>
-        <tr>
-            <td> 8:00 - 8:50 </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td> 8:50 - 9:40 </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td> 9:40 - 10:00 </td>
-            <td> Intervalo </td>
-        </tr>
-        <tr>
-            <td> 10:00 - 11:40 </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td> 11:40 - 12:30 </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td> 12:00 - 13:00 </td>
-            <td> Almoço </td>
-        </tr>
-        <tr>
-            <td> 13:00 - 13:50 </td>
-            <td> Filosofia II </td>
-            <td> Programação Web I </td>
-            <td> Língua Estrangeira - Inglês III </td>
-            <td> Programação para Dispositivos Móveis I </td>
-            <td> Língua Portuguesa e Literatura V </td>
-        </tr>
-        <tr>
-            <td> 13:50 - 14:40 </td>
-            <td> Filosofia II </td>
-            <td> Programação Web I </td>
-            <td> Língua Estrangeira - Inglês III </td>
-            <td> Programação para Dispositivos Móveis I </td>
-            <td> Língua Portuguesa e Literatura V </td>
-        </tr>
-        <tr>
-            <td> 14:40 - 15:00 </td>
-            <td> Intervalo </td>
-        </tr>
-        <tr>
-            <td> 15:00 - 15:50 </td>
-            <td> Matemática Financeira e Estatística </td>
-            <td> Física V </td>
-            <td> Química V </td>
-            <td> Química V </td>
-            <td> História III </td>
-        </tr>
-        <tr>
-            <td> 15:50 - 16:40 </td>
-            <td> Engenharia de Software II </td>
-            <td> Programação para Dispositivos Móveis I </td>
-            <td> Sociologia I </td>
-            <td> Geografia III </td>
-            <td> História III </td>
-        </tr>
-        <tr>
-            <td> 16:40 - 17:30 </td>
-            <td> Engenharia de Software II </td>
-            <td> Programação para Dispositivos Móveis I </td>
-            <td> Sociologia I </td>
-            <td> Geografia III </td>
-            <td> Física V </td>
-        </tr>
-    </table>
+    <header>
+        <nav>
+            <a href="index.html"> Página Inicial </a>
+            <a href="colegios.html"> Colégios </a>
+            <a href="sites_favoritos.html"> Sites Favoritos </a>
+            <a href="horario_de_aulas.html"> Horário de Aulas </a>
+            <a href="contato.html"> Contato </a>
+            <a href="instituto_federal.html"> Instituto Federal </a>
+            <a href="curso_superior_eng_comput.html"> Engenharia da Computação </a>
+            <a href="formacao_academica.html"> Formação Acadêmica </a>
+            <a href="atividades_culturais.html"> Atividades Culturais </a>
+        </nav>
+    </header>
+    <div id="main">
+        <h1> Horário de Aulas </h1>
+        <div id="tabela">
+            <table>
+                <tr>
+                    <th> Hora </th>
+                    <th> Segunda </th>
+                    <th> Terça </th>
+                    <th> Quarta </th>
+                    <th> Quinta </th>
+                    <th> Sexta </th>
+                </tr>
+                <tr>
+                    <td> 8:00 - 8:50 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 8:50 - 9:40 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 9:40 - 10:00 </td>
+                    <td colspan="5" class="almoco"> INTERVALO </td>
+                </tr>
+                <tr>
+                    <td> 10:00 - 11:40 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 11:40 - 12:30 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> 12:00 - 13:00 </td>
+                    <td colspan="5" class="almoco"> ALMOÇO </td>
+                </tr>
+                <tr>
+                    <td> 13:00 - 13:50 </td>
+                    <td> Filosofia II </td>
+                    <td> Programação Web I </td>
+                    <td> Língua Estrangeira - Inglês III </td>
+                    <td> Programação para Dispositivos Móveis I </td>
+                    <td> Língua Portuguesa e Literatura V </td>
+                </tr>
+                <tr>
+                    <td> 13:50 - 14:40 </td>
+                    <td> Filosofia II </td>
+                    <td> Programação Web I </td>
+                    <td> Língua Estrangeira - Inglês III </td>
+                    <td> Programação para Dispositivos Móveis I </td>
+                    <td> Língua Portuguesa e Literatura V </td>
+                </tr>
+                <tr>
+                    <td> 14:40 - 15:00 </td>
+                    <td colspan="5" class="almoco"> INTERVALO </td>
+                </tr>
+                <tr>
+                    <td> 15:00 - 15:50 </td>
+                    <td> Matemática Financeira e Estatística </td>
+                    <td> Física V </td>
+                    <td> Química V </td>
+                    <td> Química V </td>
+                    <td> História III </td>
+                </tr>
+                <tr>
+                    <td> 15:50 - 16:40 </td>
+                    <td> Engenharia de Software II </td>
+                    <td> Programação para Dispositivos Móveis I </td>
+                    <td> Sociologia I </td>
+                    <td> Geografia III </td>
+                    <td> História III </td>
+                </tr>
+                <tr>
+                    <td> 16:40 - 17:30 </td>
+                    <td> Engenharia de Software II </td>
+                    <td> Programação para Dispositivos Móveis I </td>
+                    <td> Sociologia I </td>
+                    <td> Geografia III </td>
+                    <td> Física V </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/nav-a.ativo.js"></script>
 </body>
+
 </html>
