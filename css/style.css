@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: #375A7F;
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
 #main {
     display: flex;
     align-items: center;
@@ -19,6 +13,20 @@ header {
 
 body {
     background-color: #222222;
+}
+
+header {
+    background-color: #375A7F;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
 }
 
 nav {
@@ -36,27 +44,34 @@ nav a {
     font-size: medium;
 }
 
+nav a.ativo,
 nav a:hover {
     color: #fff;
+}
+
+nav a:hover {
     font-weight: bold;
 }
 
-nav a.ativo {
-    color: #fff;
-}
-
+h1,
 p {
     color: #fff;
     text-align: center;
 }
 
 h1 {
-    color: #fff;
     margin-bottom: 3vh;
 }
 
 a {
     color: #00BC8C;
+}
+
+.a--sites-favoritos {
+    display: flex;
+    padding-bottom: 10px;
+    font-size: larger;
+    justify-content: center;
 }
 
 a:hover {
@@ -69,12 +84,14 @@ img {
     border: 5px solid white;
 }
 
+/* LISTAS */
+
+ul,
 ol {
     color: #fff;
 }
 
 ul {
-    color: #fff;
     font-size: larger;
     text-align: center;
 }
@@ -83,18 +100,7 @@ li {
     list-style-type: none;
 }
 
-.sites-favoritos {
-    display: flex;
-    padding-bottom: 10px;
-    font-size: larger;
-    justify-content: center;
-}
-
-#tabela {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
+/* TABELAS */
 
 table {
     color: #fff;
@@ -104,8 +110,15 @@ table {
     border-collapse: collapse;
 }
 
-.almoco {
-    background-color: black;
+#tabela-aulas,
+#tabela-engenharia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#tabela-engenharia {
+    width: 40%;
 }
 
 td,
@@ -113,4 +126,59 @@ th {
     padding: 10px;
     text-align: center;
     border: 1px solid black;
+}
+
+.td--almoco-intervalo {
+    background-color: black;
+}
+
+#texto p {
+    font-size: larger;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#formacao p {
+    font-size: larger;
+    text-align: center;
+}
+
+#legenda {
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#hobbies {
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+/* HOBBY CARD */
+
+.hobby-card {
+    background-image: linear-gradient(to bottom right, #2e4053, #5d6d7e);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.hobby-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
