@@ -23,25 +23,25 @@ header {
 
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
     gap: 1.5rem;
     padding: 2rem;
 }
 
 nav {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 5px;
 }
 
 nav a {
-    text-decoration: none;
     color: #AFBDCC;
-    padding: 8px 16px;
-    border-radius: 5px;
     font-size: medium;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
 }
 
 nav a.ativo,
@@ -69,9 +69,9 @@ a {
 
 .a--sites-favoritos {
     display: flex;
-    padding-bottom: 10px;
-    font-size: larger;
     justify-content: center;
+    font-size: larger;
+    padding-bottom: 10px;
 }
 
 a:hover {
@@ -79,9 +79,9 @@ a:hover {
 }
 
 img {
-    margin-bottom: 5vh;
     border-radius: 50%;
     border: 5px solid white;
+    margin-bottom: 5vh;
 }
 
 /* LISTAS */
@@ -104,9 +104,9 @@ li {
 
 table {
     color: #fff;
-    border: 1px solid black;
     width: 95%;
     table-layout: fixed;
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
@@ -123,9 +123,9 @@ table {
 
 td,
 th {
-    padding: 10px;
     text-align: center;
     border: 1px solid black;
+    padding: 10px;
 }
 
 .td--almoco-intervalo {
@@ -133,23 +133,23 @@ th {
 }
 
 #texto p {
-    font-size: larger;
     text-align: left;
-    margin-bottom: 5px;
+    font-size: larger;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 5px;
 }
 
 #formacao p {
-    font-size: larger;
     text-align: center;
+    font-size: larger;
 }
 
 #legenda {
     font-size: larger;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 #hobbies {
@@ -168,7 +168,6 @@ th {
 }
 
 .hobby-card h2 {
-    margin-top: 0;
     color: #fff;
     font-size: 1.8rem;
 }
