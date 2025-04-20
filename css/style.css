@@ -84,7 +84,7 @@ a:hover {
 
 /* IMAGEM */
 
-img {
+#index img {
     border-radius: 50%;
     border: 5px solid white;
     margin-bottom: 40px;
@@ -143,11 +143,12 @@ th {
 #hobbies {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px;
+    grid-template-rows: 300px;
     gap: 24px;
 }
 
 .hobby-card {
+    text-align: center;
     background-image: linear-gradient(to bottom right, #2e4053, #5d6d7e);
     border-radius: 12px;
     padding: 24px;
@@ -156,4 +157,9 @@ th {
 .hobby-card h2 {
     color: white;
     font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.hobby-card img {
+    border-radius: 12px;
 }
