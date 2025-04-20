@@ -4,29 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #222222;
+}
+
 #main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 40px;
 }
 
-body {
-    background-color: #222222;
-}
+/* CABEÇALHO */
 
 header {
     background-color: #375A7F;
     padding: 15px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px;
-    gap: 1.5rem;
-    padding: 2rem;
 }
 
 nav {
@@ -44,51 +38,63 @@ nav a {
     padding: 8px 16px;
 }
 
-nav a.ativo,
+#nav-a--ativo,
 nav a:hover {
-    color: #fff;
+    color: white;
 }
 
 nav a:hover {
     font-weight: bold;
 }
 
+/* TEXTO */
+
 h1,
 p {
-    color: #fff;
+    color: white;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 3vh;
+    margin-bottom: 25px;
 }
+
+#texto p {
+    text-align: left;
+    font-size: larger;
+    margin: 0px 100px 5px;
+}
+
+/* LINKS */
 
 a {
     color: #00BC8C;
-}
-
-.a--sites-favoritos {
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    padding-bottom: 10px;
 }
 
 a:hover {
     color: #006C50;
 }
 
+#sites-favoritos a {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+/* IMAGEM */
+
 img {
     border-radius: 50%;
     border: 5px solid white;
-    margin-bottom: 5vh;
+    margin-bottom: 40px;
 }
 
 /* LISTAS */
 
 ul,
 ol {
-    color: #fff;
+    color: white;
 }
 
 ul {
@@ -103,7 +109,7 @@ li {
 /* TABELAS */
 
 table {
-    color: #fff;
+    color: white;
     width: 95%;
     table-layout: fixed;
     border: 1px solid black;
@@ -132,52 +138,22 @@ th {
     background-color: black;
 }
 
-#texto p {
-    text-align: left;
-    font-size: larger;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 5px;
-}
-
-#formacao p {
-    text-align: center;
-    font-size: larger;
-}
-
-#legenda {
-    font-size: larger;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+/* HOBBIES */
 
 #hobbies {
-    margin-top: 5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 24px;
 }
-
-/* HOBBY CARD */
 
 .hobby-card {
     background-image: linear-gradient(to bottom right, #2e4053, #5d6d7e);
     border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 24px;
 }
 
 .hobby-card h2 {
-    color: #fff;
-    font-size: 1.8rem;
-}
-
-.hobby-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.hobby-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: xx-large;
 }
