@@ -112,7 +112,7 @@ table {
     color: white;
     width: 95%;
     table-layout: fixed;
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
 }
 
@@ -130,7 +130,7 @@ table {
 td,
 th {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
 }
 
